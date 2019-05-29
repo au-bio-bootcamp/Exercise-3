@@ -8,14 +8,14 @@
     a. Go to https://hpcdocs.asc.edu/ and log in with your ASC credentials.  
     b. Click on "Sequence analysis", then "Blast+".  
 
-1) From the README.txt above, you will need a script to run BLAST+. An example script named **BLAST+_example.sh** is located at: `~/shared/data/example_ASC_queue_scripts`
+1) From the README.txt above, you will need a script to run BLAST+. An example script named **BLAST+_example.sh** is located at: `/home/shared/biobootcamp/data/example_ASC_queue_scripts`
 
 1) You will need to make a copy of the above script to your home directory. Let’s do that now:
 
     a. `cd`  (to take you to the top level of your home directory)  
     b. `mkdir blast+_working_example` (create a directory to work in)  
     c. `cd blast+_working_example` (to change into the directory)  
-    d. `cp ~/shared/data/example_ASC_queue_scripts/BLAST+_example.sh .` (to copy the script to your working directory)  
+    d. `cp /home/shared/biobootcamp/data/example_ASC_queue_scripts/BLAST+_example.sh .` (to copy the script to your working directory)  
 
 
 1) Now use your choice of text editor to open the script:
@@ -25,7 +25,7 @@
 
 1) Now make a copy of the contig file resulting from *your* Ray genomic assembly performed previously to the blast+_working_example directory. The file should be named Contigs.fasta and be located in the output directory *you* specified in the Ray_example.sh script within your ray_working_example directory (Ex. 2). If for some reason you need a copy of a Ray genomic assembly, a previously owned version can be obtained following the directions below (to be run from within your blast+_working_example directory).
 
-        cp ~/shared/data/Lamellibrachia_luymesi_finished_genomic_transcriptomic_assemblies/Lamellibrachia_luymesi_all_genomic_RAY_05_2015.fasta .
+        cp /home/shared/biobootcamp/data/Lamellibrachia_luymesi_finished_genomic_transcriptomic_assemblies/Lamellibrachia_luymesi_all_genomic_RAY_05_2015.fasta .
 
 1) Leaving your file named “Contigs.fasta” is not very informative, bad practice and will lead to confusion when you happen upon it 6 months from now. So rename the file to something more descriptive using the mv command:
 
