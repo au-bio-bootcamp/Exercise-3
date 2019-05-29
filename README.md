@@ -98,14 +98,14 @@
     b. Draft the `blast2table2.pl` command with your selected options ahead of time. Discuss with members of your group the arguments that you are using and why you are using them. **HINT**: consider minimally `–format 9`, `-verbose` and a > redirect to send the results to an output file with a `blastout.parsed` file extension.
 
 
-3. Once you have drafted your blast2table2.pl command, execute it in the CLI within the `blast+_working_example` directory. Output from the parsing script should scroll by on the screen. Furthermore, a “long listing” (`ls -l`) in the blast+_working_example directory afterward should reveal a `*.blastout.parsed` file whose size is > 0.
+3. Once you have drafted your `blast2table2.pl` command, execute it in the CLI within the `blast+_working_example` directory. Output from the parsing script should scroll by on the screen. Furthermore, a “long listing” (`ls -l`) in the `blast+_working_example` directory afterward should reveal a `*.blastout.parsed` file whose size is > 0.
 
 4. Carefully examine the first 10 lines of the `*.blastout.parsed` file using the `head` command (remember this from the pre-Bootcamp assignment?). The header information for each of the columns can be found in the description of "–format 9" in `blast2table2.pl -help`.
 
 5. Of the 15 fields (columns) of the "format 9" output of `blast2table2.pl`, #11 seems promising if we want to:
 
     a. quantify how many contigs from our assembly have homology to the chosen queries (i.e., distinct mitochondrial COI gene copies from Lamellibrachia luymesi) and  
-    b. the specific identities of those contigs in the NCBI+ DB (and by extension the original *.fasta file that we used to create the DB).  
+    b. the specific identities of those contigs in the NCBI+ DB (and by extension the original `*.fasta` file that we used to create the DB).  
 
 6. Let’s extract field #11 of the report and identify how many unique entries occur (i.e., # of contigs from the assembly); be sure to provide **your** actual ___.blastout.parsed name to the following command when executed in bash:
 
