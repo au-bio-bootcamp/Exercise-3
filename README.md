@@ -49,8 +49,8 @@
 
     a. Type `esearch -help`  and  `efetch -help`  to get an idea of the general usage – we can essentially perform an Entrez query from the command line.  e.g.  `esearch -db pubmed -query "Mcclintock B [AUTH]"`   
     b. Try the command esearch  `-db nuccore  -query "Lamellibrachia luymesi [organism]"`  Again the output is not particularly informative but note the ‘count’ field in the xml output.  Does this value change if you leave out the query qualifier “organism”?  What explains the difference?  
-    c. The command `efetch` is the key to retrieving and formatting your esearch results.  Conveniently, esearch output can be "piped" into efetch: `esearch -db nuccore  -query "Lamellibrachia luymesi [organism]" | efetch  -format acc `  Look back at the efetch help to see what this format means.    
-    d. That seems useful but what we want here is to repeat the command above with the format set to fasta.  Redirect the output (hint: >) of the combined commands to a new file named something like “L_luymesi_genbank.fasta”
+    c. The command `efetch` is the key to retrieving and formatting your esearch results.  Conveniently, `esearch` output can be "piped" into `efetch`: `esearch -db nuccore  -query "Lamellibrachia luymesi [organism]" | efetch  -format acc `  Look back at the efetch help to see what this format means.    
+    d. That seems useful but what we want here is to repeat the command above with the format set to fasta.  Redirect the output (hint: >) of the combined commands to a new file named something like `L_luymesi_genbank.fasta`
 
 1) Your fasta output is relatively easy to scroll through, but imagine if it was 100x the size.  Recall the required format of a fasta file and use grep to isolate the sequence headers:
 
