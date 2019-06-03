@@ -86,12 +86,12 @@ Contig Assessment with BLAST+
     2. the specific identities of those contigs in the NCBI+ DB (and by extension the original *.fasta file that we used to create the DB).  
 
 6. Let’s extract field #11 of the report and identify how many unique entries occur (i.e., # of contigs from the assembly); be sure to provide **your** actual `*.blastout.parsed` name to the following command when executed in bash:
-    1. `cat <filename>.blastout.parsed | awk -F "\t" '{print $11}' | sort | uniq`  
+    1. `cat <FILENAME>.blastout.parsed | awk -F "\t" '{print $11}' | sort | uniq`  
     --- What just happened? Determine **as a group** exactly what the above pipeline accomplished. Remember that `man cmd_name` provides detailed information for any command as well as its options (another one from the pre-Bootcamp assignment).  Don’t worry, you’ll get more exposure to commands and pipelines like the above in your very near future …
 
 7. Repeat the above command, redirecting output to a file named `lure.txt` and examine the results with `cat`. How many unique entries (i.e., contig names) are in it? Is this the same across other members of the group? Let’s use the contents of this file to fish out **entire** FASTA nucleotide entries from the `Lamellibrachia_luymesi_all_genomic_RAY_05_2018.fasta` file for each and every descriptor in the `lure.txt` file.
     1. `select_contigs.pl -h` (provides options for parsing a FASTA report with this particular script). For the exercise, consider ‘lure.txt’ as analogous to the ‘select_file’ mentioned in the help info of `select_contigs.pl`. Therefore the `–n` flag should be specified.  
-    2. Draft the `select_contigs.pl` command with all selected options out in your own editor. Name your final output file with a `<filename>.potential_mito_genome.fasta` extension.  
+    2. Draft the `select_contigs.pl` command with all selected options out in your own editor. Name your final output file with a `<FILENAME>.potential_mito_genome.fasta` extension.  
 
 8. Once you have crafted your `select_contigs.pl` command with appropriate options, execute it on ASC. Check the final "*.potential_mito_genome.fasta" file the `get_fasta_stats.pl` script in #8 above for its statistics. Only a _single_ contig of <~15K bp should be included in the final output file.
 
