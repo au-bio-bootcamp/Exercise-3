@@ -19,7 +19,7 @@ Contig Assessment with BLAST+
 
 5. Note that comments in the script indicate where you will be tweaking your command once you decide exactly what you want to do. Close nano with `Ctrl-x`.
 
-6. Now make a copy of the contig file resulting from **your** Ray genomic assembly performed previously to the `blast+_working_example` directory. The file should be named `Contigs.fasta` and be located in the output directory **you** specified in the `Ray_example.sh` script within your `ray_working_example directory` (Ex. 2). If for some reason you need a copy of a Ray genomic assembly, a previously owned version can be obtained following the directions below (to be run from within your `blast+_working_example` directory).
+6. Now make a copy of the contig file resulting from **your** Ray genomic assembly performed previously to the `blast+_working_example` directory. The file should be named `Contigs.fasta` and be located in the output directory **you** specified in the `Ray_example.sh` script within your `ray_working_example` directory (Ex. 2). If for some reason you need a copy of a Ray genomic assembly, a previously owned version can be obtained following the directions below (to be run from within your `blast+_working_example` directory).
 
 `cp /home/shared/biobootcamp/data/Lamellibrachia_luymesi_finished_genomic_transcriptomic_assemblies/Lamellibrachia_luymesi_all_genomic_RAY_05_2015.fasta .`
 
